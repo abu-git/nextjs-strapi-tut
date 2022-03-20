@@ -1,4 +1,17 @@
 .navbar {
+    padding: 1em 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    .title {
+        font-size: 1.3em;
+    }
+
     ul {
         margin: unset;
         padding: unset;
