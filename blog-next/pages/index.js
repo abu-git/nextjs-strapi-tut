@@ -1,9 +1,11 @@
 import axios from 'axios'
+import HomeHeader from '../components/HomeHeader'
 
 export default function Home({post}) {
   console.log(post.data[1].attributes.title)
   return (
     <>
+      <HomeHeader />
       <h1>{post.data[0].attributes.title}</h1>
       <h1>{post.data[1].attributes.title}</h1>
     </>
