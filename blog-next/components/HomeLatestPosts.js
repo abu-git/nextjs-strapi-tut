@@ -9,7 +9,7 @@ function HomeLatestPosts({posts}) {
     }, [posts])
 
     function renderPostPreviews() {
-        console.log(latestPosts)
+        //console.log(latestPosts)
         return latestPosts.map((post) => {
             return <PostPreview post={post} key={post.id} />
         })

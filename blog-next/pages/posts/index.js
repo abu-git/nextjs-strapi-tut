@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import AllPosts from '../components/AllPosts'
+import AllPosts from '../../components/AllPosts'
 
 function Posts({posts}) {
   return (

@@ -3,7 +3,7 @@ import HomeHeader from '../components/HomeHeader'
 import HomeLatestPosts from '../components/HomeLatestPosts'
 
 export default function Home({posts}) {
-  console.log(posts.data[1].attributes.title)
+  //console.log(posts.data[1].attributes.title)
   return (
     <>
       <HomeHeader />
