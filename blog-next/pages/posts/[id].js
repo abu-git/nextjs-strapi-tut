@@ -1,8 +1,12 @@
 import React from 'react'
 import axios from 'axios'
+import MarkdownIt from 'markdown-it'
 
 
 function PostPage({post}) {
+
+    const md = new MarkdownIt()
+    const htmlContent = md.render(post.data.attributes.content)
     return (
         <>
             <article>
@@ -10,8 +14,7 @@ function PostPage({post}) {
                     <h1>{post.data.attributes.title}</h1>
                     <h2>{post.data.attributes.description}</h2>
                 </header>
-                <section>
-                    {post.data.attributes.content}
+                <section dangerouslySetInnerHTML={{__html: htmlContent}}>
                 </section>
             </article>
         </>
