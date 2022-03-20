@@ -10,6 +10,9 @@ function PostPage({post}) {
                     <h1>{post.data.attributes.title}</h1>
                     <h2>{post.data.attributes.description}</h2>
                 </header>
+                <section>
+                    {post.data.attributes.content}
+                </section>
             </article>
         </>
   )
