@@ -1,6 +1,18 @@
 
-export default function Home() {
+export default function Home(props) {
   return (
-    <>Home</>
+    <>
+      <h1>{props.content}</h1>
+    </>
   )
+}
+
+
+export async function getServerSideProps() {
+
+  return {
+    props: {
+      content: "Some content"
+    }
+  }
 }
